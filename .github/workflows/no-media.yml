@@ -1,0 +1,20 @@
+name: no media in the repo
+on: [pull_request, push]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: refuse media files and anything over 5 MB
+        run: |
+          bad=0
+          while IFS= read -r f; do
+            case "$(printf '%s' "$f" | tr 'A-Z' 'a-z')" in
+              media/*|libraries/*|exports/*|usage/*|stock/*|music/*|sfx/*|gfx/*|.env|.env.*|*.pem|*.key)
+                echo "::error::$f is private working data or credentials"; bad=1 ;;
+              *.mp4|*.mov|*.m4v|*.mxf|*.avi|*.mkv|*.webm|*.wav|*.mp3|*.m4a|*.aac|*.aif|*.aiff|*.flac|*.jpg|*.jpeg|*.png|*.gif|*.webp|*.tif|*.tiff|*.heic|*.psd|*.ai|*.pdf|*.zip|*.dmg|*.prproj|*.aep)
+                echo "::error::$f is a media or binary file"; bad=1 ;;
+            esac
+            if [ -f "$f" ] && [ "$(stat -c %s "$f")" -gt 5242880 ]; then echo "::error::$f is over 5 MB"; bad=1; fi
+          done < <(git ls-files)
+          exit $bad

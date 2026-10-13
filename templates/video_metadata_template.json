@@ -1,0 +1,117 @@
+{
+  "schema_version": "2.6",
+  "file_name": "",
+  "client": "",
+  "project": "",
+  "batch": "",
+  "location": null,
+  "shoot_context": null,
+  "file_size_bytes": null,
+  "content_hash": null,
+  "proxy_of": null,
+  "proxy_source": {
+    "volume": null,
+    "path": null,
+    "preset": null,
+    "match": null
+  },
+  "has_external_audio": null,
+  "sync_status": "not_run",
+  "has_speech": null,
+  "generated_at": null,
+  "generated_by": {
+    "skill": null,
+    "model": null,
+    "effort": null,
+    "verify_model": null,
+    "verify_effort": null
+  },
+  "camera_metadata": {
+    "camera_id": null,
+    "resolution": null,
+    "frame_rate": null,
+    "codec": null,
+    "bit_depth": null,
+    "color_profile": null,
+    "timecode_start": null,
+    "timecode_note": null,
+    "duration_seconds": null,
+    "date_recorded": null,
+    "camera_clock_time": null,
+    "clock_trusted": false
+  },
+  "camera_audio": {
+    "channels": null,
+    "sample_rate": null,
+    "bit_depth": null,
+    "codec": null,
+    "mean_level_db": null,
+    "silent": null
+  },
+  "content": {
+    "summary": null,
+    "visual_description": "",
+    "audio_description": "",
+    "tags": [],
+    "shot": {
+      "shot_type": null,
+      "camera_movement": null,
+      "lighting": null,
+      "time_of_day": null,
+      "interior_exterior": null
+    },
+    "subjects": {
+      "species": [],
+      "activities": [],
+      "objects": [],
+      "setting": null
+    },
+    "people_count": null,
+    "speech_kind": null,
+    "mood": null,
+    "beats": [],
+    "quality_flags": [],
+    "facets_source": null,
+    "transcript": null,
+    "transcript_language": null,
+    "transcript_source": null,
+    "transcript_segments": [],
+    "notes": null
+  },
+  "people": [],
+  "sync_relationships": {
+    "primary_audio": {
+      "file": null,
+      "device": null,
+      "offset_seconds": null
+    },
+    "linked_camera_angles": [],
+    "visual_sync_group": null,
+    "audio_sources": [],
+    "audio_roles": {
+      "main": null,
+      "scratch": [],
+      "ambience": []
+    },
+    "method": null,
+    "synced_at": null
+  },
+  "review": {
+    "status": "unreviewed",
+    "select": null,
+    "rating": null,
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  "rights": {
+    "model_release": null,
+    "location_release": null,
+    "restrictions": null,
+    "notes": null
+  },
+  "usage": {
+    "used_in_export": false,
+    "export_history": []
+  }
+}

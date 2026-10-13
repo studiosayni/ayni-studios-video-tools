@@ -1,0 +1,58 @@
+# skill environments are machine-specific; run setup.sh to recreate
+.claude/skills/*/venv/
+__pycache__/
+.DS_Store
+# working frames the describe skills extract and delete; never worth committing
+outputs/_describe_work/
+# macOS sidecars on exFAT drives
+._*
+_quarantine/
+# media never enters the repo (the pre-commit guard enforces this; these rules keep git status quiet)
+*.mp4
+*.mov
+*.m4v
+*.mxf
+*.avi
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.aif
+*.aiff
+*.flac
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.tif
+*.tiff
+*.heic
+*.srt
+*.itt
+# generated on each machine, never shared
+outputs/
+_index/
+people/_people_sheet.html
+# the Jev tools environment; run tools/jev/setup.sh
+tools/jev/venv/
+# per-desk git worktrees (Claude Code EnterWorktree); each is its own checkout
+.claude/worktrees/
+
+# Secrets and private working catalogues
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+/media/
+/libraries/
+/exports/
+/usage/
+/stock/
+/music/
+/sfx/
+/gfx/
+.venv/

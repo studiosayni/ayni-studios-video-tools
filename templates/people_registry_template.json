@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "batch": "",
+  "client": "",
+  "generated_at": null,
+  "generated_by": null,
+  "people": [
+    {
+      "person_key": "bp_01",
+      "summary_descriptor": "",
+      "canonical_name": null,
+      "confidence": "high",
+      "reference_still": null,
+      "appearances": [
+        {
+          "ref": "CLIP:person_1",
+          "clip": "",
+          "id": "person_1",
+          "descriptor": "",
+          "best_seen_seconds": null,
+          "reference_still": null,
+          "confidence": "high"
+        }
+      ],
+      "speakers": [],
+      "clips": []
+    }
+  ],
+  "unlinked": [],
+  "manual": []
+}

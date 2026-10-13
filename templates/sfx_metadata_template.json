@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "asset_type": "sfx",
+  "file_name": "",
+  "library": "sfx",
+  "path": "",
+  "file_size_bytes": null,
+  "content_hash": null,
+  "generated_at": "",
+  "generated_by": {"skill": "", "model": null, "effort": null},
+  "technical": {
+    "duration_seconds": null,
+    "sample_rate": null,
+    "bit_depth": null,
+    "channels": null,
+    "codec": null,
+    "integrated_loudness_lufs": null,
+    "true_peak_dbtp": null
+  },
+  "sfx": {
+    "category": "",
+    "subcategory": null,
+    "kind": "one-shot",
+    "source_type": "recorded",
+    "description": "",
+    "perspective": null,
+    "environment": null,
+    "loopable": false,
+    "variations": [],
+    "recorded_by": null,
+    "recorded_at": null,
+    "location": null
+  },
+  "tags": [],
+  "rights": {
+    "license_type": "",
+    "source": "",
+    "license_id": null,
+    "purchased_at": null,
+    "expires_at": null,
+    "allowed_uses": [],
+    "allowed_clients": ["*"],
+    "attribution_required": false,
+    "attribution_text": null,
+    "restrictions": null,
+    "license_file": null
+  },
+  "usage": {"used_in_export": false, "export_history": []},
+  "review": {"status": "unreviewed", "rating": null, "reviewed_by": null, "reviewed_at": null, "notes": null},
+  "notes": null
+}

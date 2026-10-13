@@ -1,0 +1,16 @@
+#!/bin/sh
+# media-root guard: no media file and nothing over 5 MB may be committed. Installed by tools/setup_repo.sh
+# (git config core.hooksPath tools/githooks). Checks what is actually staged, so git add -f cannot get past it.
+limit=5242880
+bad=0
+for f in $(git diff --cached --name-only --diff-filter=AM); do
+  case "$(printf '%s' "$f" | tr 'A-Z' 'a-z')" in
+    media/*|libraries/*|exports/*|usage/*|stock/*|music/*|sfx/*|gfx/*|.env|.env.*|*.pem|*.key)
+      echo "blocked: $f is private working data or credentials"; bad=1 ;;
+    *.mp4|*.mov|*.m4v|*.mxf|*.avi|*.mkv|*.webm|*.wav|*.mp3|*.m4a|*.aac|*.aif|*.aiff|*.flac|*.jpg|*.jpeg|*.png|*.gif|*.webp|*.tif|*.tiff|*.heic|*.psd|*.ai|*.pdf|*.zip|*.dmg|*.prproj|*.aep)
+      echo "blocked: $f is a media or binary file. Media never enters the repo; only JSON and Markdown do." ; bad=1 ;;
+  esac
+  size=$(git cat-file -s ":$f" 2>/dev/null || echo 0)
+  if [ "$size" -gt "$limit" ]; then echo "blocked: $f is $((size / 1048576)) MB, over the 5 MB limit." ; bad=1 ; fi
+done
+if [ "$bad" -ne 0 ]; then echo "commit refused by tools/githooks/pre-commit"; exit 1; fi

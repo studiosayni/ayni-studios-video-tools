@@ -1,0 +1,167 @@
+{
+  "schema_version": "2.6",
+  "file_name": "A001_C002_0912XY.mov",
+  "client": "example-client",
+  "project": "example-client",
+  "batch": "26.08.15.09-conservation-broll",
+  "location": "Example river valley",
+  "shoot_context": "Fictional example: establishing aerials for a nature film.",
+  "file_size_bytes": 1849302144,
+  "content_hash": "sha256:3f9c...e21b",
+  "proxy_of": null,
+  "proxy_source": {
+    "volume": "MEDIA",
+    "path": "/Volumes/MEDIA/originals/A001_C002_0912XY.mov",
+    "preset": "h264-proxy",
+    "match": "name + duration"
+  },
+  "has_external_audio": true,
+  "sync_status": "matched",
+  "has_speech": false,
+  "generated_at": "2026-08-16T22:14:05-05:00",
+  "generated_by": {
+    "skill": "footage-describe",
+    "model": "claude-opus-5",
+    "effort": "xhigh",
+    "verify_model": "claude-opus-5",
+    "verify_effort": "high"
+  },
+  "camera_metadata": {
+    "resolution": "3840x2160",
+    "frame_rate": 23.976,
+    "codec": "XAVC-I",
+    "bit_depth": 10,
+    "color_profile": "S-Log3 / S-Gamut3.Cine",
+    "timecode_start": "01:12:34:10",
+    "timecode_note": "from the file's timecode track; free-run camera timecode, comparable only between clips from the same camera",
+    "duration_seconds": 187,
+    "date_recorded": "2026-08-15",
+    "camera_clock_time": "2026-08-15T09:14:02.000000Z",
+    "clock_trusted": false,
+    "camera_id": "camA"
+  },
+  "camera_audio": {
+    "channels": 2,
+    "sample_rate": 48000,
+    "bit_depth": 24,
+    "codec": "pcm_s24le",
+    "mean_level_db": -38.2,
+    "silent": false
+  },
+  "content": {
+    "visual_description": "Wide establishing shot of the river valley at sunrise, drone descends toward the conservation camp.",
+    "audio_description": "Ambient river sound and wind, no dialogue.",
+    "tags": [
+      "drone",
+      "establishing shot",
+      "sunrise",
+      "river valley"
+    ],
+    "transcript": null,
+    "transcript_source": "recorder1",
+    "transcript_segments": [],
+    "shot": {
+      "shot_type": "wide",
+      "camera_movement": "drone",
+      "lighting": "golden_hour",
+      "time_of_day": "dawn",
+      "interior_exterior": "exterior"
+    },
+    "transcript_language": null,
+    "notes": "Illustrative metadata, not a real clip.",
+    "summary": "Drone descends over a sunrise river valley toward the conservation camp.",
+    "subjects": {
+      "species": [],
+      "activities": [
+        "descending over the valley"
+      ],
+      "objects": [
+        "river",
+        "camp buildings"
+      ],
+      "setting": "river_or_lake"
+    },
+    "people_count": "none",
+    "speech_kind": "none",
+    "mood": "calm",
+    "beats": [
+      {
+        "start": 0.0,
+        "end": 20.0,
+        "text": "high wide over the valley at sunrise"
+      },
+      {
+        "start": 20.0,
+        "end": 41.0,
+        "text": "descent toward the camp, river on the left"
+      }
+    ],
+    "quality_flags": [],
+    "facets_source": "describe"
+  },
+  "people": [],
+  "sync_relationships": {
+    "linked_camera_angles": [
+      {
+        "file": "B001_C002_0912XY.mov",
+        "offset_seconds": -2.15
+      }
+    ],
+    "visual_sync_group": "sunrise_camp_scene_01",
+    "audio_sources": [
+      {
+        "file": "audio/recorder1/A001_audio_0912XY.wav",
+        "device": "recorder1",
+        "role": "main",
+        "offset_seconds": 0.42,
+        "confidence": 0.61,
+        "drift_seconds": 0.0,
+        "method": "correlation"
+      },
+      {
+        "file": "audio/lav1/L001_0912XY.wav",
+        "device": "lav1",
+        "role": "scratch",
+        "offset_seconds": 12.37,
+        "confidence": 0.55,
+        "drift_seconds": 0.0,
+        "method": "correlation"
+      }
+    ],
+    "audio_roles": {
+      "main": "recorder1",
+      "scratch": [
+        "lav1",
+        "camera"
+      ],
+      "ambience": [
+        "camera"
+      ]
+    },
+    "primary_audio": {
+      "file": "audio/recorder1/A001_audio_0912XY.wav",
+      "device": "recorder1",
+      "offset_seconds": 0.42
+    },
+    "method": "correlation",
+    "synced_at": "2026-08-16T21:50:12-05:00"
+  },
+  "review": {
+    "status": "pending",
+    "select": false,
+    "rating": null,
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  "rights": {
+    "model_release": null,
+    "location_release": null,
+    "restrictions": null,
+    "notes": null
+  },
+  "usage": {
+    "used_in_export": false,
+    "export_history": []
+  }
+}
